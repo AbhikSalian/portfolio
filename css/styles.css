@@ -1,3 +1,8 @@
+/* styles.css */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,18 +14,45 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
+    padding: 0 1em; /* Remove the top and bottom padding */
+    position: fixed;
+    width: 100%;
+    height: 60px; /* Adjust the height as needed */
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally (optional) */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+.logo{
+    margin-left: 20px;
+    white-space: nowrap;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+header nav {
+    max-width: 1200px; /* Limit the width of the nav container */
+    margin: 0 auto; /* Center the nav container */
+    width: 100%;
+    display: flex; /* Enable Flexbox for nav */
+    align-items: center; /* Center nav items vertically */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Align items to the right */
     padding: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center; /* Ensure items are centered vertically */
 }
 
 header nav ul li {
     margin: 0 1em;
+    display: flex;
+    align-items: center; /* Center list items vertically */
 }
 
 header nav ul li a {
@@ -32,6 +64,7 @@ section {
     padding: 2em;
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 5em; /* Add top padding to avoid content hiding behind the fixed header */
 }
 
 footer {
@@ -39,7 +72,7 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: #fff;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
