@@ -60,6 +60,14 @@ header nav ul li a {
     text-decoration: none;
 }
 
+header nav ul li button {
+    padding: 5px 15px;  
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    color: rgb(226, 30, 30);
+    border-radius: 12px;
+}
 section {
     padding: 2em;
     max-width: 800px;
