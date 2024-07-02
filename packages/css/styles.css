@@ -548,20 +548,20 @@ img {
   width: 50%;
 }
 
-.skills__bank {
-  width: 80%;
-}
-
-.skills__google {
-  width: 70%;
-}
-
-.skills__counter {
-  width: 80%;
-}
-
-.skills__office {
+.skills__html {
   width: 90%;
+}
+
+.skills__css {
+  width: 80%;
+}
+
+.skills__solidworks {
+  width: 75%;
+}
+
+.skills__javascript {
+  width: 65%;
 }
 
 .skills__close .skills__list {
